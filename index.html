@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Quality Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+  <body>
+    <h1 id="title">Live Quality Survey Form</h1><br>
+    <p id="description">
+      Thank you for participating in our survey, please fill out our form
+    </p><br>
+    <div id="survey-form">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label><br />
+          <input class="input" type="text" value="Enter your name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label><br />
+          <input class="input" type="text" value="Enter your email"  pattern=".+@+.+"  required/>
+        </div>
+        <div class="form-group">
+          <label for="age">Age(optional)</label><br />
+          <input class="input" type="number" value="18" pattern="number" min="18" max="99" />
+        </div>
+        <div class="form-group">
+          <label for="feelings">Are you happy with your life?</label><br />
+          <select class="input" type="dropdown">
+            <option value="option!">Select an option!</option>
+            <option value="vhappy">Very happy!</option>
+            <option value="happy">Happy!</option>
+            <option value="no">No</option>
+            <option value="ihml">I hate my live!</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Do you have any plans for the future?</p>
+          <input type="radio" id="proj" name="plans" value="proj" /><label
+            for="proj"
+            >I have many projects!</label
+          ><br />
+          <input type="radio" id="no" name="plans" value="no" /><label for="no"
+            >No!I am discouraged</label
+          ><br />
+          <input type="radio" id="think" name="plans" value="think" /><label
+            for="think"
+            >I have not thought about that!</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What its the best part of life for you?</p>
+          <select class="input" type="dropdown">
+            <option value="option!">Select an option!</option>
+            <option value="fam">Family</option>
+            <option value="friend">Friends</option>
+            <option value="pcareer">Professional career</option>
+            <option value="religion">Religion</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What would make you feel happier?(Check all that apply)</p>
+          <input type="checkbox" id="1" name="1" value="money" /><label>Money</label><br>
+          <input type="checkbox" id="2" name="2" value="relationship" /><label>Relationships</label><br>
+          <input type="checkbox" id="3" name="3" value="vacation" /><label>Vacations</label><br>
+          <input type="checkbox" id="4" name="4" value="psucces" /><label>Professional succes</label><br>
+          <input type="checkbox" id="5" name="5" value="lstress" /><label>Less stress</label><br>
+          <input type="checkbox" id="6" name="6" value="promoted" /><label>Getting promoted</label><br>
+          <input type="checkbox" id="7" name="7" value="food" /><label>Food</label><br>
+          <input type="checkbox" id="8" name="8" value="massage" /><label>A massage</label><br>
+          <input type="checkbox" id="9" name="9" value="alcohol" /><label>Alcohol</label><br>
+          <input type="checkbox" id="10" name="10" value="lcode" checked /><label>Learn code</label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea class="input" name="comm" id="comm" cols="110" rows="5"></textarea>
+        <div class="form-group">
+          <button type="submit" >Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
